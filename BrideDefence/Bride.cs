@@ -5,14 +5,32 @@ using System.Text;
 
 namespace BrideDefence
 {
-    public abstract class Tower : GameEngine
+    public class Bride : GameEngine
     {
-        private bool isActive;
-        private int towerDamage;
-        private int towerRange;
-        private object towerType;
-    
-        public int IsActive
+        private int currentBrideHitpoints;
+        private int brideLevel;
+        private int bridePosition;
+
+        public int CurrentBrideHitpoints
+        {
+            get
+            {
+                return this.currentBrideHitpoints;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    this.currentBrideHitpoints = 0;
+                }
+                else
+                {
+                    this.currentBrideHitpoints = value;
+                }
+            }
+        }
+
+        public int BrideLevel
         {
             get
             {
@@ -23,29 +41,7 @@ namespace BrideDefence
             }
         }
 
-        public int TowerDamage
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public int TowerRange
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public int TowerType
+        public int BridePosition
         {
             get
             {

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BrideDefence
 {
-    public class Crossbow : Weapons
+    public class Crossbow : Weapon
     {
     }
 }

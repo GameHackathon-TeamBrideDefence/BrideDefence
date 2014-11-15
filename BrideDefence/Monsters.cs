@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BrideDefence
 {
-    public abstract class Monsters : GameEngine
+    public abstract class Monster : GameEngine
     {
     }
 }

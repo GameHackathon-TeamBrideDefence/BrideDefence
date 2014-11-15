@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BrideDefence
 {
-    public class Ghost : Monsters
+    public class Ghost : Monster
     {
     }
 }
